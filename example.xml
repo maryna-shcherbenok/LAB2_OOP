@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graduates>
+	<graduate fullName="Іваненко Іван Іванович" faculty="Інженерія" department="Комп'ютерні системи" specialty="Програмна інженерія" admissionYear="2015" graduationYear="2019">
+		<career>
+			<position company="ABC IT" role="Junior Developer" start="2019" end="2020" />
+			<position company="XYZ Solutions" role="Middle Developer" start="2020" end="2023" />
+		</career>
+	</graduate>
+	<graduate fullName="Петренко Марія Олександрівна" faculty="Математика" department="Статистика" specialty="Аналіз даних" admissionYear="2014" graduationYear="2018">
+		<career>
+			<position company="Data Inc." role="Data Analyst" start="2018" end="2022" />
+			<position company="Tech Analytics" role="Senior Data Analyst" start="2022" />
+		</career>
+	</graduate>
+	<graduate fullName="Коваленко Олег Сергійович" faculty="Фізика" department="Теоретична фізика" specialty="Квантова механіка" admissionYear="2016" graduationYear="2020">
+		<career>
+			<position company="Quantum Labs" role="Research Assistant" start="2020" end="2022" />
+			<position company="Quantum Innovations" role="Research Scientist" start="2022" />
+		</career>
+	</graduate>
+	<graduate fullName="Сидоренко Катерина Василівна" faculty="Інженерія" department="Автоматизація" specialty="Системи автоматизації" admissionYear="2013" graduationYear="2017">
+		<career>
+			<position company="XYZ Solutions" role="Automation Engineer" start="2017" end="2020" />
+			<position company="Tech Analytics" role="Senior Automation Engineer" start="2020" />
+		</career>
+	</graduate>
+	<graduate fullName="Гончаренко Андрій Павлович" faculty="Інженерія" department="Комп'ютерні системи" specialty="Програмна інженерія" admissionYear="2015" graduationYear="2019">
+		<career>
+			<position company="ABC IT" role="Junior Developer" start="2019" end="2020" />
+			<position company="XYZ Solutions" role="Middle Developer" start="2020" end="2022" />
+			<position company="Tech Innovations" role="Senior Developer" start="2022" />
+		</career>
+	</graduate>
+	<graduate fullName="Мельник Оксана Іванівна" faculty="Математика" department="Статистика" specialty="Аналіз даних" admissionYear="2014" graduationYear="2018">
+		<career>
+			<position company="Data Inc." role="Data Analyst" start="2018" end="2021" />
+			<position company="Quantum Innovations" role="Senior Analyst" start="2021" />
+		</career>
+	</graduate>
+	<graduate fullName="Бойко Михайло Олексійович" faculty="Фізика" department="Теоретична фізика" specialty="Квантова механіка" admissionYear="2016" graduationYear="2020">
+		<career>
+			<position company="Quantum Labs" role="Research Assistant" start="2020" end="2021" />
+			<position company="Quantum Innovations" role="Research Scientist" start="2022" />
+		</career>
+	</graduate>
+	<graduate fullName="Антоненко Василь Григорович" faculty="Математика" department="Статистика" specialty="Аналіз даних" admissionYear="2014" graduationYear="2018">
+		<career>
+			<position company="Tech Analytics" role="Data Engineer" start="2018" end="2020" />
+			<position company="Tech Analytics" role="Senior Data Engineer" start="2020" />
+		</career>
+	</graduate>
+	<graduate fullName="Кравченко Олена Дмитрівна" faculty="Фізика" department="Теоретична фізика" specialty="Квантова механіка" admissionYear="2015" graduationYear="2019">
+		<career>
+			<position company="Quantum Labs" role="Researcher" start="2019" end="2022" />
+			<position company="Quantum Innovations" role="Senior Research Scientist" start="2022" />
+		</career>
+	</graduate>
+	<graduate fullName="Ткаченко Ігор Іванович" faculty="Інженерія" department="Комп'ютерні системи" specialty="Програмна інженерія" admissionYear="2016" graduationYear="2020">
+		<career>
+			<position company="ABC IT" role="Junior Developer" start="2020" end="2021" />
+			<position company="XYZ Solutions" role="Middle Developer" start="2021" />
+		</career>
+	</graduate>
+</graduates>
