@@ -35,7 +35,6 @@ namespace LAB2_OOP
 
             foreach (var graduate in results)
             {
-                // Перевіряємо наявність елемента career і додаємо порожній, якщо його немає
                 if (graduate.Element("career") == null)
                 {
                     graduate.Add(new XElement("career"));
