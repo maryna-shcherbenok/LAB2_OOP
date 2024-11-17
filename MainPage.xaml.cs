@@ -1,5 +1,5 @@
 ﻿using LAB2_OOP.Helpers;
-using LAB2_OOP.Logic;
+using LAB2_OOP.Manager;
 
 namespace LAB2_OOP
 {
