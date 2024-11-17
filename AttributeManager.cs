@@ -1,6 +1,6 @@
 ﻿using System.Xml.Linq;
 
-namespace LAB2_OOP.Logic
+namespace LAB2_OOP.Manager
 {
     public class AttributeManager
     {
