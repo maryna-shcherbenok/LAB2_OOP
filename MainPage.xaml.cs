@@ -7,7 +7,7 @@ namespace LAB2_OOP
     {
         private XMLparserType parserContext = new XMLparserType();
 
-        private string selectedFilePath; // Шлях до файлу
+        private string selectedFilePath;
 
         private readonly AttributeManager attributeManager = new AttributeManager();
         private readonly ExportHelper exportHelper = new ExportHelper();
