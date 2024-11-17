@@ -8,10 +8,10 @@ namespace LAB2_OOP
         public IEnumerable<XElement> Execute(string filePath, List<string> attributes, List<string> keywords)
         {
             var results = new List<XElement>();
-            var document = new XmlDocument();
-            document.Load(filePath);
+            var doc = new XmlDocument();
+            doc.Load(filePath);
 
-            foreach (XmlNode graduateNode in document.GetElementsByTagName("graduate"))
+            foreach (XmlNode graduateNode in doc.GetElementsByTagName("graduate"))
             {
                 var graduateElement = XElement.Parse(graduateNode.OuterXml);
 
