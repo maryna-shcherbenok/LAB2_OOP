@@ -1,8 +1,8 @@
 ﻿using System.Xml.Xsl;
 
-namespace LAB2_OOP.Helpers
+namespace LAB2_OOP.Export
 {
-    public class ExportHelper
+    public class ExportFile
     {
         public async Task ExportToHtml(string filePath)
         {
