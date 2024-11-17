@@ -8,10 +8,10 @@ namespace LAB2_OOP
         public IEnumerable<XElement> Execute(string filePath, List<string> attributes, List<string> keywords)
         {
             var results = new List<XElement>();
-            var doc = new XmlDocument();
-            doc.Load(filePath);
+            var document = new XmlDocument();
+            document.Load(filePath);
 
-            foreach (XmlNode graduateNode in doc.GetElementsByTagName("graduate"))
+            foreach (XmlNode graduateNode in document.GetElementsByTagName("graduate"))
             {
                 var graduateElement = XElement.Parse(graduateNode.OuterXml);
 
@@ -30,7 +30,6 @@ namespace LAB2_OOP
             {
                 var value = graduate.Attribute(attribute)?.Value ?? string.Empty;
 
-                // Якщо значення не знайдено, перевіряємо вкладені `position`
                 if (string.IsNullOrEmpty(value))
                 {
                     foreach (var position in graduate.Element("career")?.Elements("position") ?? Enumerable.Empty<XElement>())
