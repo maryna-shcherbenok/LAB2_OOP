@@ -20,13 +20,11 @@ namespace LAB2_OOP
                     {
                         if (reader.Name == "graduate")
                         {
-                            // Початок graduate
                             insideGraduate = true;
                             currentGraduate = new XElement("graduate");
                             careerElement = new XElement("career");
                             currentGraduate.Add(careerElement);
 
-                            // Додаємо атрибути graduate
                             if (reader.HasAttributes)
                             {
                                 while (reader.MoveToNextAttribute())
@@ -38,10 +36,8 @@ namespace LAB2_OOP
                         }
                         else if (reader.Name == "position" && insideGraduate)
                         {
-                            // Початок position
                             var positionElement = new XElement("position");
 
-                            // Додаємо атрибути position
                             if (reader.HasAttributes)
                             {
                                 while (reader.MoveToNextAttribute())
@@ -51,13 +47,11 @@ namespace LAB2_OOP
                                 reader.MoveToElement();
                             }
 
-                            // Додаємо position до career
                             careerElement.Add(positionElement);
                         }
                     }
                     else if (reader.NodeType == XmlNodeType.EndElement && reader.Name == "graduate")
                     {
-                        // Завершення graduate
                         insideGraduate = false;
 
                         if (GraduateMatches(currentGraduate, attributes, keywords))
@@ -78,14 +72,12 @@ namespace LAB2_OOP
                 var attribute = attributes[i];
                 var keyword = keywords[i];
 
-                // Перевіряємо атрибути graduate
                 var value = graduate.Attribute(attribute)?.Value ?? string.Empty;
                 if (!string.IsNullOrEmpty(value) && value.Contains(keyword, StringComparison.OrdinalIgnoreCase))
                 {
                     continue;
                 }
 
-                // Перевіряємо атрибути position
                 var careerMatches = graduate.Element("career")?
                     .Elements("position")
                     .Any(position =>
