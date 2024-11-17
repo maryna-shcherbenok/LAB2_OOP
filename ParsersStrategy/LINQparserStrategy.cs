@@ -18,8 +18,7 @@ namespace LAB2_OOP
             foreach (var attribute in attributes)
             {
                 var value = graduate.Attribute(attribute)?.Value ?? string.Empty;
-
-                // Якщо значення не знайдено, перевіряємо вкладені `position`
+                
                 if (string.IsNullOrEmpty(value))
                 {
                     foreach (var position in graduate.Element("career")?.Elements("position") ?? Enumerable.Empty<XElement>())
