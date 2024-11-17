@@ -1,0 +1,79 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LAB2_OOP.MainPage" 
+             BackgroundColor="#f0f5f5">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="Вибрати файл XML" 
+                        Clicked="OnSelectFileClicked"
+                        BackgroundColor="#bfbfbf"
+                        TextColor="Black"
+                        Margin="5" />
+
+                <Button Text="Експортувати в HTML" 
+                        Clicked="OnExportClicked" 
+                        Margin="5"
+                        BackgroundColor="#bfbfbf"
+                        TextColor="Black" />
+
+                <Button Text="Вихід" 
+                        Clicked="OnExitClicked"
+                        Margin="5"
+                        BackgroundColor="#bfbfbf"
+                        TextColor="Black" />
+            </HorizontalStackLayout>
+
+            <Picker x:Name="ParserPicker" 
+                    Title="Оберіть тип парсера"
+                    TextColor="Black"
+                    TitleColor="Black"
+                    BackgroundColor="#94b8b8"
+                    Margin="5" />
+
+            <Label Text="Оберіть атрибути для пошуку:" 
+                   TextColor="Black"
+                   Margin="5" />
+
+            <CollectionView x:Name="AttributeCollectionView" 
+                            SelectionMode="Multiple" 
+                            HeightRequest="250"
+                            BackgroundColor="#669999"
+                            Margin="5">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10">
+                            <Label Text="{Binding Key}" 
+                                   VerticalOptions="Center" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <HorizontalStackLayout Spacing="10">
+                <Entry x:Name="SearchEntry" 
+                       Placeholder="Введіть ключові слова через кому"
+                       TextColor="Black" 
+                       PlaceholderColor="Black"
+                       Margin="5"
+                       BackgroundColor="#94b8b8" />
+
+                <Button Text="Шукати" 
+                        Clicked="OnSearchClicked" 
+                        Margin="5"
+                        BackgroundColor="#bfbfbf"
+                        TextColor="Black" />
+
+                <Button Text="Очистити" 
+                        Clicked="OnClearClicked" 
+                        Margin="5"
+                        BackgroundColor="#bfbfbf"
+                        TextColor="Black" />
+            </HorizontalStackLayout>
+
+            <StackLayout x:Name="ResultsStackLayout" 
+                         BackgroundColor="#3d5c5c"
+                         Margin="5" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

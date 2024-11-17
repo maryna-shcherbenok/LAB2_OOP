@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<graduates>
+	<graduate fullName="Іваненко Іван Іванович" faculty="Інженерія" department="Комп'ютерні системи" specialty="Програмна інженерія" admissionYear="2015" graduationYear="2019">
+		<career>
+			<position company="ABC IT" role="Junior Developer" start="2019" end="2020" />
+			<position company="XYZ Solutions" role="Middle Developer" start="2020" end="2023" />
+		</career>
+	</graduate>
+	<graduate fullName="Петренко Марія Олександрівна" faculty="Математика" department="Статистика" specialty="Аналіз даних" admissionYear="2014" graduationYear="2018">
+		<career>
+			<position company="Data Inc." role="Data Analyst" start="2018" end="2022" />
+			<position company="Tech Analytics" role="Senior Data Analyst" start="2022" />
+		</career>
+	</graduate>
+</graduates>
